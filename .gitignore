@@ -1,0 +1,20 @@
+### Build artifacts ###
+target/
+build/
+dist/
+
+### IDE ###
+.idea/
+*.iml
+.vscode/*
+!.vscode/tasks.json
+!.vscode/settings.json
+!.vscode/extensions.json
+
+### OS ###
+.DS_Store
+Thumbs.db
+
+### Backups ###
+*.old
+*.bak

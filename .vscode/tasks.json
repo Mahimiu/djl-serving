@@ -1,0 +1,35 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "docker: build image",
+      "type": "shell",
+      "command": "docker build -t galmmax1/djl-serving:latest .",
+      "problemMatcher": []
+    },
+    {
+      "label": "docker: run container",
+      "type": "shell",
+      "command": "docker run --rm -p 8080:8080 galmmax1/djl-serving:latest",
+      "problemMatcher": []
+    },
+    {
+      "label": "docker: push to registry",
+      "type": "shell",
+      "command": "docker push galmmax1/djl-serving:latest",
+      "problemMatcher": []
+    },
+    {
+      "label": "docker compose: up",
+      "type": "shell",
+      "command": "docker compose up -d",
+      "problemMatcher": []
+    },
+    {
+      "label": "docker compose: down",
+      "type": "shell",
+      "command": "docker compose down",
+      "problemMatcher": []
+    }
+  ]
+}
